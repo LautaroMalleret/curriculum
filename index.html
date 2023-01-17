@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/75bb38ec2f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <script>
+      function mostrar( nombre){
+    div = document.getElementById(nombre);
+    if (div.style.display === 'none'){
+        div.style.display="block";
+    }
+    else{
+        div.style.display="none";
+    }
+    }
+    </script>
+
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+    
+    <nav class="nav">   
+        <ul>
+            <li class="item-nav"><a href="#inicio"><i class="fa-solid fa-house icon-nav"></i>Inicio</a></li>
+            <li class="item-nav"><a href="#educacion"><i class="fa-solid fa-graduation-cap icon-nav"></i>Educacion</a></li>
+            <li class="item-nav"><a href="#conocimientos"><i class="fa-solid fa-book icon-nav"></i>Conocimientos</a></li>
+            <li class="item-nav"><a href="#experiencia"><i class="fa-solid fa-briefcase icon-nav"></i>Experiencia</a></li>
+            <li class="item-nav item-nav-contacto"><a href="#contacto"><i class="fa-solid fa-phone icon-nav"></i>Contacto</a></li>
+        </ul>
+    </nav>
+
+    <img src="img/foto.jpg" class="foto" alt="">
+    
+    <div class="body">
+        <br><br><br>
+    <h1 class="title" id="inicio">Lautaro Malleret</h1>
+
+    <h2 class="subtitulo">Sobre Mi</h2>
+    <div class="sobre-mi">
+        <p>Hola, mi nombre es Lautaro y tengo 21 años, vivo en  Malvinas Argentinas - Buenas Aires, Soy estudiante de informatica y busco mis primeras oportunidades en el ambito laboral de la programacion, me vengo preparando hace dos años de forma autodidacta, con cursos online y tambien desde la univesidad. Soy una persona proactiva, que siempre busca mejorar en los detalles, buscando solucionar lo antes posible los problemas que se me presentan en el dia a dia, llevandome bien con el trabajo bajo presion. Me gusta trabajar en equipo, dividiendo tareas y ayudando al resto cuando lo necesitan al igual que pedir ayuda a la hora de necesitarla. Gracias por leer hasta aca y si te sigue interesando te dejo mas informacion sobre mi aca abajo. Saludos.</p>
+    </div>
+
+    <h2 class="subtitulo" onclick="mostrar('educacion')">Educacion</h2>
+    <div id="educacion" class="contenedor">
+        <ul>
+            <li><h3>Secudario completo</h3>
+                Escuela secundaria Nacional N7 - 2019    
+            </li>
+            <li><h3>Tecnicatura en informatica</h3>
+                Universidad Nacional de General Sarmiento - Cursando <br> 50% de la carrera completa    
+            </li>
+            <li><h3>Bootcamp Codo a Codo</h3>
+              Curso Full-Stack Java <br> Aprobado    
+          </li>
+        </ul>
+    </div>
+
+    <h2 class="subtitulo"  onclick="mostrar('conocimientos')">Conocimientos</h2>
+    <div id="conocimientos" class="contenedor">
+        <ul><h3>Desarrolador Backend & Frontend</h3>
+            <li><i class="fa-brands fa-java"></i> Java</li>
+            <li><i class="fa-brands fa-html5"></i> Html</li>
+            <li><i class="fa-brands fa-css3-alt"></i> Css</li>
+            <li><i class="fa-brands fa-bootstrap"></i> Boostrap</li>
+            <li><i class="fa-brands fa-git-alt"></i> Git</li>
+            <li><i class="fa-brands fa-linux"></i> Linux</li>
+            
+        </ul>
+    </div>
+
+    <h2 class="subtitulo" onclick="mostrar('experiencia')" >Experiencia</h2>
+    <div id="experiencia" class="contenedor">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/Barbarianna.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Barbarianna (2021)</h5>
+                <p class="card-text">Videojuego de plataforma 2D, donde un personaje va subiendo pisos esquivando enemigos hasta llegar a la cima. Proyecto realizado en Java con el fin de trabajar la programacion orientada a objetos en el marco de un trabajo final para la universidad.</p>
+                <a href="https://gitlab.com/LautaroMalleret/TP-Programacion1" target="_blank">ver mas...</a>
+              </div>
+            </div>
+          </div>  
+          <div class="col">
+              <div class="card h-100">
+                <img src="img/Wordle.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Wordle de nombres (2022)</h5>
+                  <p class="card-text">Videojuego para adivinar un nombre de 5 letras, realizado en Java, manteniendo separada la interfaz graficas de la lógica de trabajo. Proyecto realizado con un compañero para trabajo practico universitario</p>
+                  <a href="https://gitlab.com/AleAima/tpwordle" target="_blank">ver mas...</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/pagina web.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Pagina Web (2022)</h5>
+                  <p class="card-text">Trabajo practico de creacion de pagina web para el Bootcamp de Codo a Codo, realizado con HTML, CSS y Boostrap (con alguna funcionalidad javascript en el apartado de tickets)</p>
+                  <a href="https://integrador-codo-a-codo-malleret.netlify.app/" target="_blank">ver mas...</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/simulacion de album.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Simulador de album del mundial (2022)</h5>
+                  <p class="card-text">Aplicacion de escritorio que mediante multiples simulaciones obtiene la cantidad aproximada de paquetes de figuritas que deberia comprar cada usuario para completar su album de figuritas. El proyecto esta realizado en java con el fin de utilizar varios hilos de ejecucion a la vez.</p>
+                  <a href="https://gitlab.com/LautaroMalleret/simulacionalbummundial" target="_blank">ver mas...</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                  <img src="img/mapas.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Graficador de Clusters en mapa (2022)</h5>
+                    <p class="card-text">Aplicacion realizada para la universidad, que grafica en un mapa las coordenadas ingresadas y separa por colores los cluster, teniendo en cuenta la distancia de cada punto. este proyecto se realizo con el fin de trabajar con Grafos utilizando metodos, como el de Kruskal, para generar Arboles generadores minimos.</p>
+                    <a href="https://gitlab.com/LautaroMalleret/graficadorademapas" target="_blank">ver mas...</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div>
+
+    <h2 class="subtitulo" onclick="mostrar('contacto')">Contacto</h2>
+    <div id="contacto" class="contenedor">
+        <p>Telefono: 1125400531</p>
+        <p>Email: lautaromalleret@gmail.com</p>
+    </div>
+</div>
+<footer>
+  Gracias por tu tiempo.
+</footer>
+</body>
+
+</html>
