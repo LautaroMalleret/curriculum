@@ -2,6 +2,8 @@ body{
     margin: 0px 0px;
     padding: 0px;
     font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    background-color: grey;
 }
 .body{
     margin: 0px 300px;
@@ -18,13 +20,19 @@ body{
 .item-nav{
     display: inline-block;
     margin: 10px 10px 0px 10px;
+    text-decoration: none;
 }
+
+
 
 .item-nav>a{
     text-decoration: none;
     color: white;
 }
-
+.item-nav>a:hover{
+    color: darkgray;
+    font-size: larger;
+}
 .icon-nav{
     margin: 5px;
 }
@@ -47,10 +55,16 @@ body{
 .subtitulo{
     text-align: center;
     background-color: midnightblue;
+    border-radius:10px ;
     color: white;
     margin: 10px 0px;
     padding: 10px 0px;
     cursor: pointer;
+}
+
+.subtitulo:hover{
+    background-color:darkblue;
+    color:dimgray;
 }
 
 .contenedor{
@@ -63,6 +77,39 @@ body{
     font-size: 2em;
  }
 
+ .btn{
+    width: 100%;
+    margin-bottom: 10px;
+ }
+
+ .btn>a{
+   text-decoration: none;
+   color: black;
+   font-size: 1rem;
+   background-color:limegreen;
+   padding: 10px;
+   border-radius: 10px;
+ }
+
+ .btn>a:hover{
+    font-size: 1.5rem;
+    background-color:springgreen;
+ }
+
+/*.btn{
+    width:100%;
+    background-color: midnightBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+.btn:hover{
+    background-color: RoyalBlue;
+  }
+*/
  footer{
     background-color: midnightblue;
     color: white;
